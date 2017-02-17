@@ -56,35 +56,40 @@ public:
 	
 private:
 	//
-	//>>>>>>>>>>>>>>>>>>>>Christian Williams Work here<<<<<<<<<<<<<<<<<<<<<<<<
+	//+++++++++++++++++++++++++++Christian Williams Work here++++++++++++++++++++++++++++
 	//
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
 
 	public:
-		// Default no-argument constructor 
+		string name;
+		string number;
+
+		// Default no-argument constructor  <<<<<<<<<<<<<<<<<<<<<<<<<fin
 		Directory_Entry() {
-		
+			name = "";
+			number = "";
 		} 
-		// constructor not implemented yet
+		// constructor implamented                <<<<<<<<<<<<<<<<<<<<< fin
 		Directory_Entry(std::string the_name, std::string the_number) {
-			
+			name = the_name;
+			number = the_number;
 		}
-		// method not implemented yet
+		// return's the string name in string form <<<<<<<<<<<<<<<<<<<<<fin
 		std::string get_name() const {
-			return ""; 
+			return name;
 		}
-		// method not implemented yet
+		// return number in string form <<<<<<<<<<<<<<<<<<<<<<<fin
 		std::string get_number() const {
-			return ""; 
+			return number; 
 		}
-		// method not implemented yet
+		// set the number to a new string <<<<<<<<<<<<<<<<<<<<<<<<<<<<<fin
 		void set_number(const std::string& new_number) {
-			
+			number = new_number;
 		}
 	private:
 
-		//<<<<<<<<<<<<<<<<<<<Christian Williams Work Ends>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//++++++++++++++++++++Christian Williams Work Ends++++++++++++++++++++++++
 	};
 
 	// Private Functions
