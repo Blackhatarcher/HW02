@@ -51,7 +51,7 @@ public:
 	/** Writes the contents of the directory to the data file.
 	 */
 	void save();
-
+	
 private:
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
