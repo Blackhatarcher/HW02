@@ -120,11 +120,23 @@ string Phone_Directory::remove_entry(const string& name)
 {
 
 	// Hint: you can use the code below to shift names down in the directory to remove the selected entry specified by "index"
+	
+	//index is the index of the entry that I want to remove
 	int index = 0;
+	//will set this to the person's number if he is found 
+	string result = "";
+	
+	//find the index of the entry to be removed
+	for (int i = 0; i < size - 1; i++) {
+		if()
+	}
+		
+	
+	//remove the entry
 	for (int i = index; i < size - 1; i++)
 		the_directory[i] = the_directory[i + 1];
 
-	return "";
+	return result;
 }
 
 //++++++++++++++++++++++++++++Christian Williams has stopped working +++++++++++++++++++++
