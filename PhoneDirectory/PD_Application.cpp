@@ -85,14 +85,18 @@ void do_lookup_entry(Phone_Directory& the_directory)
 	}
 }
 
+
+// ++++++++++++++++++ Korina's Work Here ++++++++++++++++++++++++++++++++++
 void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please complete the function do_remove_entry - Ed/Kent
 {
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
-	// Complete the rest of this function 
-	
+
+	the_directory.remove_entry(name);	//Calls Phone_Directory's remove_entry function passing in the name to remove
 }
+
+//++++++++++++++++++ Korina's Work Ends +++++++++++++++++++++++++++++++++++
 
 void do_save(Phone_Directory& the_directory)
 {

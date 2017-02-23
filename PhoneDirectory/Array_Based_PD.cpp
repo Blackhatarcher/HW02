@@ -124,7 +124,7 @@ string Phone_Directory::remove_entry(const string& name)
 	//index is the index of the entry that I want to remove
 	int index = -1;
 	//will set this to the person's number if he is found 
-	string result = "";
+	string result = ""; //initiate result to empty string	(Korina's comment)
 	
 	//find the index of the entry to be removed
 	for (int i = 0; i < size - 1; i++) {
@@ -140,7 +140,7 @@ string Phone_Directory::remove_entry(const string& name)
 			the_directory[i] = the_directory[i + 1];
 	}
 
-	return result;
+	return result;	//result is either the name of person or an empty string (default) (Korina's comment)
 }
 
 //++++++++++++++++++++++++++++Christian Williams has stopped working +++++++++++++++++++++
